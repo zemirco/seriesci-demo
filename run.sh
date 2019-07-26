@@ -8,14 +8,14 @@ curl \
 	--verbose \
 	--header "Authorization: Token ${TOKEN}" \
 	--header "Content-Type: application/json" \
-	--data "{\"value\":2.25,\"sha\":\"${CIRCLE_SHA1}\"}" \
+	--data "{\"value\":2.5,\"sha\":\"${CIRCLE_SHA1}\"}" \
 	"https://seriesci.com/api/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/deps/values"
 
 curl \
 	--verbose \
 	--header "Authorization: Token ${TOKEN}" \
 	--header "Content-Type: application/json" \
-	--data "{\"value\":175,\"sha\":\"${CIRCLE_SHA1}\"}" \
+	--data "{\"value\":90,\"sha\":\"${CIRCLE_SHA1}\"}" \
 	"https://seriesci.com/api/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}/loc/values"
 
 exit 0
